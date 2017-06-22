@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.krivic.mismapast2.StartActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/titleMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lima - Peru"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="30dp"
+        />
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/titleMaps"
+
+        android:id="@+id/gridLayout">
+
+
+
+        <ImageView
+            android:id="@+id/zooImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundcorner"
+            android:onClick="goToMaps"
+            android:src="@drawable/zoologicocalifull"
+           />
+
+
+
+
+        <ImageView
+            android:id="@+id/sanImg"
+            android:src="@drawable/colinasanantoniofull"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundcorner"
+            android:onClick="goToMaps"
+            />
+        <ImageView
+            android:id="@+id/catImg"
+            android:src="@drawable/gatotejadafull"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundcorner"
+            android:onClick="goToMaps"
+            />
+        <ImageView
+            android:id="@+id/kingImg"
+            android:src="@drawable/cristoreycalifull"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundcorner"
+            android:onClick="goToMaps"
+            />
+
+    </GridLayout>
+
+</RelativeLayout>
